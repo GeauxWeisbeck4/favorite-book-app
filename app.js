@@ -5,8 +5,8 @@ var bodyParser  = require("body-parser"),
 
 var api = Cosmic();
 var bucket = api.bucket({
-    slug: "favorite-book",
-    read_key: "QxlWYVywWwJu94x9vVp3DJFt11OqLIUJRBBp0i4FyqbpvtOOhp"
+    slug: process.env.COSMIC_BUCKET || "favorite-book",
+    read_key: process.env.COSMIC_READ_KEY || "QxlWYVywWwJu94x9vVp3DJFt11OqLIUJRBBp0i4FyqbpvtOOhp"
 });
 
 app.set("view engine", "ejs");
