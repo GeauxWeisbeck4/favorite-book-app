@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "cosmicjs": "^3.2.8",
+    "cosmicjs": "^3.4.4",
     "ejs": "^2.6.1",
     "express": "^4.16.3"
   }
